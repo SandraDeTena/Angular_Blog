@@ -28,7 +28,7 @@ export class FormularioComponent implements OnInit {
       texto: new FormControl('', [
 
         Validators.required,
-        Validators.minLength(120),
+        Validators.minLength(500),
 
 
       ]),
