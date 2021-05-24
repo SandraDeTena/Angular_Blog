@@ -1,0 +1,38 @@
+.header{
+
+  width: 100% !important;
+  border: 3px solid #ff8000;
+  padding: 17%;
+  background: url(https://aprenderwp.com/wp-content/uploads/2019/09/whatisblog.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  margin-bottom: 10px;
+  
+}
+
+h1, h3{
+
+    text-align: center;
+    color: #ff8000;
+    padding: 20px;
+
+}
+
+
+@media(max-width:768px){ 
+
+
+
+    .header{
+
+     border: 3px solid #ff8000;
+     background: url(https://www.quobono.com/wp-content/uploads/2020/07/shutterstock_1029506242-Que-es-un-blog-800x445.jpg);
+     background-repeat:no-repeat;
+     background-position: top;
+     background-size:auto;
+     margin-bottom: 10px;
+     padding: 50% 0;
+    } 
+
+}

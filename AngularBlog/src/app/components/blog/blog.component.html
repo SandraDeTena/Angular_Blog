@@ -1,0 +1,40 @@
+<!-- CREACION DEL SELECT -->
+
+<div class="select">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text label" for="inputGroupSelect01">Elige tu categoria : </label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01" (change)="onChange($event)" id="selectCategoria">
+
+            <option value="todos">Ver todos </option>
+
+            <option [value]="categoria" *ngFor="let categoria of listaCategorias">
+                {{ categoria.toUpperCase()}}
+            </option>
+        </select>
+    </div>
+</div>
+
+
+<!-- CREACION DE LOS ARTICULOS -->
+
+<div class="mycontainer">
+    <div class="articulos">
+
+        <div class="articulo" *ngFor="let post of listaPosts">
+
+            <h3>{{post.categoria.toUpperCase()}}</h3>
+            <h2>{{post.titulo}} </h2>
+
+            <figure>
+                <img [src]="post.imagen" alt="imagen del post">
+            </figure>
+
+            <p>{{post.texto}}</p>
+            <h4>{{post.autor}}</h4>
+            <h6>{{post.fecha | date:'dd/MM/YYYY'}}</h6>
+        </div>
+
+    </div>
+</div>

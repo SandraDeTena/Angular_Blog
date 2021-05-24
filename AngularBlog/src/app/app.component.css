@@ -1,0 +1,39 @@
+
+.myContainer{
+
+    margin: 0 auto;
+}
+
+
+.miColor{
+
+    background-color: #60B2E6;
+    color: white;
+}
+
+.text-center{
+    background-color: #95cdf0;
+
+}
+
+a{
+    color:  white;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media(max-width:767px){ 
+
+    .myContainer{
+
+     width: 100%;
+    }
+
+
+}
+
+
+

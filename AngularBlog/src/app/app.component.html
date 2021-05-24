@@ -1,2 +1,25 @@
-<blog-component></blog-component>
-<formulario-component></formulario-component>
+<div class="card text-center">
+    <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/blog']" (click)="onClick('blog')"
+                    [ngClass]="{ miColor: (mostrar === 'blog') }">Ir
+                    al Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " [routerLink]="['/new']" (click)="onClick('new')"
+                    [ngClass]="{ miColor: (mostrar === 'new') }">Crear nuevo artículo</a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+
+<div class="myContainer">
+
+    <router-outlet></router-outlet>
+
+</div>
+
+<app-footer></app-footer>
